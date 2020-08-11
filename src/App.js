@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import ContadorPalavras from "./pages/useMemo/ContatorPalavras";
 import Contador from "./pages/useCallback/Contador";
+import Main from "./pages/useContext/Main";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/useCallback" exact={true}>
           <Contador />
+        </Route>
+        <Route path="/useContext" exact={true}>
+          <Main />
         </Route>
       </Switch>
     </Router>
