@@ -24,8 +24,19 @@
   color: white;
 }
 
+.Home-list {
+  list-style: none;
+  padding: 0%;
+  margin-top: 0%;
+}
+
 .Home-link {
   color: #61dafb;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: large;
 }
 
 @keyframes Home-logo-spin {

@@ -9,30 +9,74 @@ function Home() {
     <div className="Home">
       <nav className="Home-header">
         <img src={logo} className="Home-logo" alt="logo" />
-        <p>Exemplos de React Hooks</p>
-        <Link className="Home-link" to="/useState">
-          useState
-        </Link>
 
-        <Link className="Home-link" to="/useEffect">
-          useEffect
-        </Link>
+        <section>
+          <h1>Componentes React</h1>
+          <ul className="Home-list">
+            <li>
+              <Link className="Home-link" to="/classVSfuncComponents">
+                Componentes de Classe X Componentes Funcionais
+              </Link>
+            </li>
+          </ul>
+        </section>
 
-        <Link className="Home-link" to="/useCallback">
-          useCallback
-        </Link>
+        <section>
+          <h1>Exemplos de React Hooks</h1>
 
-        <Link className="Home-link" to="/useMemo">
-          useMemo
-        </Link>
+          <h2>Hooks principais</h2>
+          <ul className="Home-list">
+            <li>
+              <Link className="Home-link" to="/useState">
+                useState
+              </Link>
+            </li>
 
-        <Link className="Home-link" to="/useReducer">
-          useReducer
-        </Link>
+            <li>
+              <Link className="Home-link" to="/useEffect">
+                useEffect
+              </Link>
+            </li>
 
-        <Link className="Home-link" to="/useContext">
-          useContext
-        </Link>
+            <li>
+              <Link className="Home-link" to="/useContext">
+                useContext
+              </Link>
+            </li>
+          </ul>
+
+          <h2>Alguns hooks adicionais</h2>
+          <ul className="Home-list">
+            <li>
+              <Link className="Home-link" to="/useReducer">
+                useReducer
+              </Link>
+            </li>
+
+            <li>
+              <Link className="Home-link" to="/useCallback">
+                useCallback
+              </Link>
+            </li>
+
+            <li>
+              <Link className="Home-link" to="/useMemo">
+                useMemo
+              </Link>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Extra</h1>
+          <ul className="Home-list">
+            <li>
+              <Link className="Home-link" to="/customHook">
+                Criando Hook Customizado
+              </Link>
+            </li>
+          </ul>
+        </section>
       </nav>
     </div>
   );
