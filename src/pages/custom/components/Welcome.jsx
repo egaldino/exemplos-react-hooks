@@ -5,7 +5,12 @@ import React from "react";
 function Welcome({ usuario }) {
   return (
     <div>
-      <p>Bem vindo, {usuario.nome}</p>
+      <p>
+        Bem vindo,{" "}
+        <span style={{ color: usuario.online ? "green" : "#DC143C" }}>
+          {usuario.nome}
+        </span>
+      </p>
     </div>
   );
 }

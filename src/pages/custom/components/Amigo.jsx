@@ -12,7 +12,11 @@ function Amigo({ id }) {
 
   const [usuario] = useUsuario(id);
 
-  return <li key={id}>{usuario?.nome}</li>;
+  return (
+    <li key={id} style={{ color: usuario.online ? "green" : "#DC143C" }}>
+      {usuario?.nome}
+    </li>
+  );
 }
 
 export default Amigo;
